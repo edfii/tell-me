@@ -1,0 +1,34 @@
+<script lang="ts">
+	import '../assets/styles.css';
+</script>
+
+<div class="bgcolor">
+	<div class="bgimg"/>
+    <div class="content">
+        <h1>Erzähl doch mal ...</h1>
+        <div class="card">test</div>
+        <button>Neues Thema</button>
+    </div>
+</div>
+
+<style>
+	.bgcolor {
+		background-image: linear-gradient(180deg, #ffe9e9 50%, #005c3b 50%);
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}
+	.bgimg {
+		position: absolute;
+		width: 100%;
+		height: 50%;
+		bottom: 0;
+		background-image: url('../assets/terazzo.svg');
+	}
+	.content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+</style>
