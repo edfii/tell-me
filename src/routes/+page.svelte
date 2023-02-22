@@ -6,7 +6,7 @@
 	<div class="bgimg"/>
     <div class="content">
         <h1>Erzähl doch mal ...</h1>
-        <div class="card">test</div>
+        <div class="card">test neuer Test 123 45678</div>
         <button>Neues Thema</button>
     </div>
 </div>
