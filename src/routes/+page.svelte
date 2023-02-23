@@ -40,4 +40,13 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+	@media only screen and (max-width: 800px) {
+		.content {
+			width: 80%;
+  }}
+  @media only screen and (max-width: 500px) {
+		.content {
+			width: 95%;
+  }
+}
 </style>
