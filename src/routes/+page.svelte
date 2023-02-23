@@ -1,14 +1,23 @@
 <script lang="ts">
 	import '../assets/styles.css';
+	import xyz from '../assets/questions.json';
+
+	let item = xyz.items[0]
+
+	function getRandomItem() {
+		let arr = xyz.items;
+		const randomIndex = Math.floor(Math.random() * arr.length);
+		item = arr[randomIndex];
+	}
 </script>
 
 <div class="bgcolor">
-	<div class="bgimg"/>
-    <div class="content">
-        <h1>Erzähl doch mal ...</h1>
-        <div class="card">test neuer Test 123 45678</div>
-        <button>Neues Thema</button>
-    </div>
+	<div class="bgimg" />
+	<div class="content">
+		<h1>...</h1>
+		<div class="card">{item}</div>
+		<button on:click={getRandomItem}>Neues Thema</button>
+	</div>
 </div>
 
 <style>
