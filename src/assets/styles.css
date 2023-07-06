@@ -17,6 +17,13 @@ h1 {
     font-size: 64px;
     font-family: DMSerifDisplayItalic;
     text-align: center;
+    margin: 1px;
+}
+
+p {
+    text-align: center; 
+    margin-top: 1px;
+    margin-bottom: 40px;
 }
 
 button {
@@ -39,7 +46,7 @@ button {
     border-radius: 30px;
     padding: 30px;
     background-color: white;
-    font-family: DMSerifDisplayItalic;
+    box-shadow: -10px 10px 0px black;
     font-size: 24px;
     height: auto;
     max-width: 300px;

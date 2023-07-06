@@ -1,20 +1,26 @@
 <script lang="ts">
 	import '../assets/styles.css';
 	import xyz from '../assets/questions.json';
+	let arr = xyz.items.map((x) => x);
 
-	let item = xyz.items[0]
+	let item = xyz.items[0];
 
 	function getRandomItem() {
-		let arr = xyz.items;
-		const randomIndex = Math.floor(Math.random() * arr.length);
-		item = arr[randomIndex];
+		if (arr.length !== 0) {
+			const randomIndex = Math.floor(Math.random() * arr.length);
+			item = arr[randomIndex];
+			arr.splice(randomIndex, 1);
+		} else {
+			arr = xyz.items.map((x) => x)
+		}
 	}
 </script>
 
 <div class="bgcolor">
 	<div class="bgimg" />
 	<div class="content">
-		<h1>...</h1>
+		<h1>nahbar...</h1>
+		<p>Ein Anstoß für gehaltvolle Gespräche</p>
 		<div class="card">{item}</div>
 		<button on:click={getRandomItem}>Neues Thema</button>
 	</div>
@@ -43,10 +49,14 @@
 	@media only screen and (max-width: 800px) {
 		.content {
 			width: 80%;
-  }}
-  @media only screen and (max-width: 500px) {
+		}
+	}
+	@media only screen and (max-width: 500px) {
 		.content {
 			width: 95%;
-  }
-}
+		}
+		h1 {
+			font-size: 56px;
+		}
+	}
 </style>
