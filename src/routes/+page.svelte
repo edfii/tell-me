@@ -19,8 +19,7 @@
 <div class="bgcolor">
 	<div class="bgimg" />
 	<div class="content">
-		<h1>nahbar...</h1>
-		<p>Ein Anstoß für gehaltvolle Gespräche</p>
+		<p>Ein einfaches Fragenset für tiefe Gespräche</p>
 		<div class="card">{item}</div>
 		<button on:click={getRandomItem}>Neues Thema</button>
 	</div>
@@ -28,7 +27,7 @@
 
 <style>
 	.bgcolor {
-		background-image: linear-gradient(180deg, #ffe9e9 50%, #005c3b 50%);
+		background-image: linear-gradient(180deg, #fff0f0 50%, #3a0000 50%);
 		height: 100%;
 		width: 100%;
 		position: absolute;

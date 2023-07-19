@@ -50,5 +50,6 @@ button {
     font-size: 24px;
     height: auto;
     max-width: 300px;
+    min-height: 135px;
     margin: auto;
 }
